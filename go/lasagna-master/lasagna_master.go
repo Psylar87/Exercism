@@ -1,7 +1,10 @@
 package lasagna
 
 func PreparationTime(layers []string, TimePerLayer int) int {
-	panic("")
+	if len(layers) == 0 {
+		return 0
+	}
+	return len(layers) * TimePerLayer
 }
 
 func Quantities(layers []string) (int, float64) {
